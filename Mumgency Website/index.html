@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@500;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop">
+      <div class="main-frame">
+        <div class="bg"></div>
+        <header class="care-nest-parent">
+          <div class="care-nest">CARE-NEST</div>
+          <div class="dashboard-imli-ji-about-us-fra-parent">
+            <div class="dashboard-imli-ji-about-us-fra">
+              <div class="dashboard">Dashboard</div>
+              <div class="imli-ji">Imli-Ji</div>
+              <div class="about-us">About Us</div>
+            </div>
+            <div class="customer-frame">
+              <div class="customer-login">Customer Login</div>
+              <button class="sign-up">
+                <div class="button-name-parent">
+                  <b class="button-name">Sign up</b>
+                  <div class="icon">
+                    <img class="iconoutlinearrow-right" alt="" />
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </header>
+        <div class="care-nd-share-with-us-parent">
+          <div class="care-nd-share">Care ‘nd Share with Us</div>
+          <h1 class="an-iot-enabled-container">
+            <span
+              >An IoT Enabled Pre and Post Pregnancy Monitoring System
+            </span>
+            <span class="using-ai">using AI</span>
+          </h1>
+          <button class="buttons" id="buttons">
+            <div class="buttonprimarywith-icon">
+              <div class="button-name-group">
+                <b class="button-name1">Create account</b>
+                <div class="icon1">
+                  <img class="iconoutlinearrow-right1" alt="" />
+                </div>
+              </div>
+            </div>
+          </button>
+          <div class="days-free-trial">
+            30 Days free trial | No credit card required
+          </div>
+        </div>
+      </div>
+      <main class="shadow-parent">
+        <div class="shadow"></div>
+        <div class="bg-frame">
+          <div class="bg1"></div>
+          <div class="wrapper-child-frame">
+            <img
+              class="child-frame-icon"
+              alt=""
+              src="./public/child-frame.svg"
+            />
+          </div>
+        </div>
+        <img
+          class="image-1-icon"
+          loading="eager"
+          alt=""
+          src="./public/image-1@2x.png"
+        />
+
+        <img
+          class="image-2-icon"
+          loading="eager"
+          alt=""
+          src="./public/image-2@2x.png"
+        />
+
+        <img class="image-4-icon" alt="" src="./public/image-4@2x.png" />
+
+        <img class="image-5-icon" alt="" src="./public/image-5@2x.png" />
+      </main>
+    </div>
+
+    <script>
+      var buttons = document.getElementById("buttons");
+      if (buttons) {
+        buttons.addEventListener("click", function (e) {
+          // Please sync "Tablet" to the project
+        });
+      }
+      </script>
+      <script src="https://cdn.botpress.cloud/webchat/v1/inject.js" class="bot"></script>
+      <script>
+        window.botpressWebChat.init({
+            "composerPlaceholder": "What's on you mind mummy?",
+            "botConversationDescription": "Personalized chatbot",
+            "botId": "634c1a16-aa17-4eee-a177-9ebddbb5821b",
+            "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+            "messagingUrl": "https://messaging.botpress.cloud",
+            "clientId": "634c1a16-aa17-4eee-a177-9ebddbb5821b",
+            "webhookId": "6551d009-e866-45d6-81e1-3f6ef686ace3",
+            "lazySocket": true,
+            "themeName": "prism",
+            "frontendVersion": "v1",
+            "theme": "prism",
+            "themeColor": "#2563eb"
+        });
+      </script>
+  </body>
+</html>
